@@ -44,5 +44,5 @@ At the moment logs are persistent as they are present in the container-specific 
 For development purposes the Flask webserver is OK, but if we want the API to scale we may consider using gunicorn/nginx.
 
 ## Theoretical AWS System Diagram
-![](/diagram.png?raw=true "Optional Title")
+![](/system_diagram.png?raw=true "Optional Title")
 
