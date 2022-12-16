@@ -1,0 +1,59 @@
+2022-12-16 17:22:54,321 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 17:22:54,322 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 17:22:54,324 [INFO]  * Restarting with stat
+2022-12-16 17:22:55,526 [WARNING]  * Debugger is active!
+2022-12-16 17:22:55,532 [INFO]  * Debugger PIN: 915-434-641
+2022-12-16 17:26:22,437 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 17:26:22,438 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 17:26:22,441 [INFO]  * Restarting with stat
+2022-12-16 17:26:23,860 [WARNING]  * Debugger is active!
+2022-12-16 17:26:23,866 [INFO]  * Debugger PIN: 915-434-641
+2022-12-16 17:27:06,858 [INFO] >>> Running 'get' function. Logged at 2022-12-16 17:27:06.858860+00:00
+2022-12-16 17:27:07,047 [INFO] >>> Function: 'get' executed. Logged at 2022-12-16 17:27:06.858860+00:00
+2022-12-16 17:27:07,049 [INFO] 172.22.0.1 - - [16/Dec/2022 17:27:07] "GET /read/first-chunk HTTP/1.1" 200 -
+2022-12-16 17:38:58,574 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 17:38:58,576 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 17:38:58,579 [INFO]  * Restarting with stat
+2022-12-16 17:39:00,718 [WARNING]  * Debugger is active!
+2022-12-16 17:39:00,722 [INFO]  * Debugger PIN: 915-434-641
+2022-12-16 18:00:15,434 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 18:00:15,437 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 18:00:15,440 [INFO]  * Restarting with stat
+2022-12-16 18:00:16,592 [WARNING]  * Debugger is active!
+2022-12-16 18:00:16,599 [INFO]  * Debugger PIN: 915-434-641
+2022-12-16 18:01:09,513 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 18:01:09,514 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 18:01:09,516 [INFO]  * Restarting with stat
+2022-12-16 18:01:10,593 [WARNING]  * Debugger is active!
+2022-12-16 18:01:10,596 [INFO]  * Debugger PIN: 915-434-641
+2022-12-16 18:02:21,291 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.5:5000
+2022-12-16 18:02:21,293 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 18:02:21,295 [INFO]  * Restarting with stat
+2022-12-16 18:02:22,483 [WARNING]  * Debugger is active!
+2022-12-16 18:02:22,487 [INFO]  * Debugger PIN: 386-437-763
+2022-12-16 18:07:40,539 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 18:07:40,544 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 18:07:40,545 [INFO]  * Restarting with stat
+2022-12-16 18:07:42,021 [WARNING]  * Debugger is active!
+2022-12-16 18:07:42,032 [INFO]  * Debugger PIN: 915-434-641

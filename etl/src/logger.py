@@ -5,15 +5,12 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler("debug.log"),
-        logging.StreamHandler()
-    ]
+    handlers=[logging.FileHandler("debug.log"), logging.StreamHandler()],
 )
-logger = logging.getLogger('My Logger')
+logger = logging.getLogger("My Logger")
+
 
 def log(func):
-
     @wraps(func)
     def wrapper(*args, **kwargs):
         called_at = datetime.now(timezone.utc)
