@@ -20,5 +20,10 @@ class ReadFirstChunk(Resource):
 
 api.add_resource(ReadFirstChunk, '/read/first-chunk')
 
+def create_app():
+	api.init_app(app)
+	return app
+
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+	APP = create_app()
+	APP.run(debug=True,host='0.0.0.0')

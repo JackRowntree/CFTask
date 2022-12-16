@@ -4,3 +4,4 @@ flask-marshmallow
 flask-restful
 psycopg2-binary
 pandas
+pytest

@@ -4,7 +4,7 @@ services:
     build: ./etl/
   api:
     build: ./api/
-    command: python app.py
+    command: python src/app.py
     # volumes:
     #   - ./services/web/:/usr/src/app/
     ports:
