@@ -23,7 +23,7 @@ The API container spins up a minimal flask-restful API with one endpoint to expo
 * `curl -v http://127.0.0.1:5000/read/first-chunk` to use hit the API
 
 ### Testing
-Execute the following:
+Execute the following to run api or etl tests in their respective containers:
 ```
 docker exec -it <cftask-etl/cftask-api> bash
 cd test
