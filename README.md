@@ -42,6 +42,8 @@ Test coverage in the API code is not 100% - I prioritized testing ETL code as I 
 At the moment logs are persistent as they are present in the container-specific directory which is mounted as a volume. However this may not be best practice, and I have not had time to think about improving this.
 ### API Webserver
 For development purposes the Flask webserver is OK, but if we want the API to scale we may consider using gunicorn/nginx.
+### Security
+For this development environment I was not conerned with security, but managing postgres credentials (which are currently just explicitly defined in code) would be a next step.
 
 ## Theoretical AWS System Diagram
 ![](/system_diagram.png?raw=true "Optional Title")
