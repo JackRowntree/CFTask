@@ -37,8 +37,6 @@ pytest
 For the sake of time prioritization, there are certainly areas in this codebase that could still be improved
 ### Testing
 Test coverage in the API code is not 100% - in general I would prioritize testing ETL code as I regard data quality as more fundamental than API function in this case. However, given more time, I would improve this.
-### Container Orchestration
-I am currently using `sleep` to ensure the API is ready after the ETL has run, which is not optimal. Ideally, I would use a bash script to wait for the 0 exit code then spin up the api.
 ### Logging
 At the moment logs are persistent as they are present in the container-specific directory which is mounted as a volume. However this may not be best practice, and I have not had time to think about improving this.
 
