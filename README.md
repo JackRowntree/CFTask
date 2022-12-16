@@ -24,7 +24,7 @@ Just runs the postgres docker container and sets some psql parameters
 ### Executing program
 
 * docker-compose up
-* `curl -v http://127.0.0.1:5000/read/first-chunk` to use hit the API
+* `curl -v http://127.0.0.1:5000/read/first-chunk` to hit the API
 
 ### Testing
 Execute the following to run api or etl tests in their respective containers:
@@ -44,6 +44,8 @@ At the moment logs are persistent as they are present in the container-specific 
 For development purposes the Flask webserver is OK, but if we want the API to scale we may consider using gunicorn/nginx.
 ### Security
 For this development environment I was not conerned with security, but managing postgres credentials (which are currently just explicitly defined in code) would be a next step.
+### Handling API Response
+I did not provide code for parsing the API response into e.g. a pandas dataframe or something useful.
 
 ## Theoretical AWS System Diagram
 ![](/system_diagram.png?raw=true "Optional Title")
