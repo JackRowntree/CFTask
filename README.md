@@ -16,10 +16,11 @@ An in-depth paragraph about your project and overview of use.
 
 * docker-compose up
 * `curl -v http://127.0.0.1:5000/read/first-chunk` to use hit the API
-```
 
 ### Testing
 Execute the following:
-* `docker exec -it <cftask-etl/cftask-api> bash`
-* `cd test`
-* `pytest`
+```
+docker exec -it <cftask-etl/cftask-api> bash
+cd test
+pytest
+```
