@@ -3,8 +3,13 @@
 A simple ETL pipeline that takes csvs, transforms, pushes to db, and exposes with rest API.
 
 ## Description
+A network of 3 docker containers - one running postgres, one that runs the ETL code, and one that runs the Flask API.
 
-An in-depth paragraph about your project and overview of use.
+### ETL
+The ETL container simply takes the csv files, does some simple joins/aggregation, and loads to the postgres db.
+
+### API
+The API container spins up a minimal flask-restful API with one endpoint to expose the data as outlined.
 
 ## Getting Started
 
