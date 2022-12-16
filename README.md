@@ -37,7 +37,7 @@ pytest
 ## Improvements
 For the sake of time prioritization, there are certainly areas in this codebase that could still be improved
 ### Testing
-Test coverage in the API code is not 100% - I prioritized testing ETL code as I regard data quality as more fundamental than API function in this case. However, given more time, I would improve this.
+Test coverage in the API code is not 100% - I prioritized testing ETL code as I regard data quality as more fundamental than API function in this case.  (i.e., no data is better than wrong data). However, given more time, I would improve this.
 ### Logging
 At the moment logs are persistent as they are present in the container-specific directory which is mounted as a volume. However this may not be best practice, and I have not had time to think about improving this.
 
