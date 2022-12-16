@@ -1,8 +1,8 @@
-from logger import logger
+from logger import log
 from typing import Dict
 from pandas import DataFrame
 
-@logger
+@log
 def transform(dfs: Dict[str, DataFrame]) -> DataFrame:
 	"""
 	Transforms data
@@ -10,7 +10,7 @@ def transform(dfs: Dict[str, DataFrame]) -> DataFrame:
 	transformed_df = _transform(dfs)
 	return transformed_df
 
-@logger
+@log
 def _transform(dfs: Dict[str, DataFrame]) -> DataFrame:
 	df_people = dfs['people']
 	df_trades = dfs['trades']

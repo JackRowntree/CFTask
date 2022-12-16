@@ -1,14 +1,14 @@
-from logger import logger
+from logger import log
 from typing import Dict
 import pandas as pd
-
-CSV_PATH = "../static/"
+import os
+CSV_PATH = "/code/static/"
 CSV_KEYS_AND_PATHS = {
 	'people': CSV_PATH + 'people.csv',
 	'trades': CSV_PATH + 'trades.csv'
 }
 
-@logger
+@log
 def extract() -> Dict[str, pd.DataFrame]:
 	"""
 	Reads data from db
@@ -17,14 +17,14 @@ def extract() -> Dict[str, pd.DataFrame]:
 	enforce_schemas(extracted_dfs)
 	return extracted_dfs
 
-@logger
+@log
 def enforce_schemas(dfs: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
 	"""
 	Here is where schemas/dtypes could theoretically be enforced.
 	"""
 	coerce_datetimes(dfs)
 
-@logger
+@log
 def coerce_datetimes(dfs: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
 	"""
 	Any cols with 'date' get converted to dt (clearly not optimal, but for the sake of expediency)

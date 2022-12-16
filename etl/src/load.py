@@ -1,21 +1,22 @@
-from logger import logger
+from logger import log
 from sqlalchemy import create_engine
 from typing import Dict
 from pandas import DataFrame
 
-db_name = 'database'
-db_user = 'username'
-db_pass = 'secret'
-db_host = 'db'
-db_port = '5432'
+def create_engine():
+	db_name = 'database'
+	db_user = 'username'
+	db_pass = 'secret'
+	db_host = 'db'
+	db_port = '5432'
+	# Connecto to the database
+	db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
+	db = sqlalchemy.create_engine(db_string)
+	return db
 
-# Connecto to the database
-db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
-db = create_engine(db_string)
-
-@logger
+@log
 def load(df: Dict[str, DataFrame]):
 	"""
 	Loads data into db
 	"""
-	df.to_sql('output',db)
+	df.to_sql('output',create_engine(), if_exists = 'replace')
