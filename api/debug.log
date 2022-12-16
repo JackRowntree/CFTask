@@ -57,3 +57,13 @@
 2022-12-16 18:07:40,545 [INFO]  * Restarting with stat
 2022-12-16 18:07:42,021 [WARNING]  * Debugger is active!
 2022-12-16 18:07:42,032 [INFO]  * Debugger PIN: 915-434-641
+2022-12-16 18:53:42,207 [INFO]  * Detected change in '/usr/src/app/src/app.py', reloading
+2022-12-16 18:53:46,297 [INFO]  * Restarting with stat
+2022-12-16 19:21:49,504 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.4:5000
+2022-12-16 19:21:49,506 [INFO] [33mPress CTRL+C to quit[0m
+2022-12-16 19:21:49,508 [INFO]  * Restarting with stat
+2022-12-16 19:21:50,511 [WARNING]  * Debugger is active!
+2022-12-16 19:21:50,517 [INFO]  * Debugger PIN: 915-434-641

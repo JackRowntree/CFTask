@@ -3,6 +3,7 @@ import sqlalchemy
 import logging
 from datetime import datetime, timezone
 from functools import wraps
+from sqlalchemy.engine.base import Engine
 
 logging.basicConfig(
     level=logging.INFO,
@@ -24,7 +25,10 @@ def log(func):
     return wrapper
 
 
-def create_engine():
+def create_engine() -> Engine:
+    """
+    Returns engine for psql db
+    """
     db_name = "database"
     db_user = "username"
     db_pass = "secret"
@@ -38,7 +42,10 @@ def create_engine():
     return db
 
 
-def get_first_chunk():
+def get_first_chunk() -> str:
+    """
+    Returns top 10 rows from ETL output table in postgres
+    """
     return pd.read_sql("select * from output limit 10", create_engine()).to_json(
         orient="records"
     )

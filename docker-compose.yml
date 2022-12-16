@@ -2,6 +2,7 @@ version: "3.8"
 services:
   etl:
     build: ./etl/
+    container_name: cftask-etl
     depends_on:
       db:
         condition: service_healthy
@@ -9,6 +10,7 @@ services:
       - ./etl:/code/
   api:
     build: ./api/
+    container_name: cftask-api
     command: python src/app.py
     volumes:
       - ./api:/usr/src/app/
@@ -19,6 +21,7 @@ services:
         condition: service_completed_successfully
   db:
     build: ./db/
+    container_name: cftask-db
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
