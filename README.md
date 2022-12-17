@@ -1,6 +1,6 @@
 # CFTask
 
-A simple ETL pipeline that takes csvs, transforms, pushes to db, and exposes with rest API.
+A simple ETL pipeline that takes csvs, transforms, pushes to db, and exposes with rest API. The base data was randomly generated from mockaroo.com, and consists of two tables - `people.csv`, representing personal info, and `trades.csv` representing stock-specific trade info.
 
 ## Description
 * A network of 3 docker containers - one running postgres, one that runs the ETL code, and one that runs the Flask API. 
