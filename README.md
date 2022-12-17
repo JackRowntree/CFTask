@@ -8,7 +8,7 @@ A simple ETL pipeline that takes csvs, transforms, pushes to db, and exposes wit
 * The ETL and API containers have mounted volumes for development
 
 ### ETL
-The ETL container simply takes the csv files, does some simple joins/aggregation, and loads to the postgres db. 
+The ETL container simply takes the csv files, does some simple joins/aggregation (effectively first trade per person), and loads to the postgres db. 
 
 ### API
 The API container spins up a minimal flask-restful API with one endpoint to expose the data as outlined.
